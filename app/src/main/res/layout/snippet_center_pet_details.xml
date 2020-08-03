@@ -1,0 +1,257 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/link_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/details_background"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ic_neutered"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_neuter"
+                android:tint="@color/link_blue" />
+
+            <ImageView
+                android:id="@+id/ic_vaccinated"
+                android:layout_marginTop="20dp"
+                android:layout_width="35dp"
+                android:layout_below="@id/ic_neutered"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_vaccine"
+                android:tint="@color/link_blue"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/pet_photo"
+                android:src="@drawable/pet"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/light_cyan"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_below="@+id/pet_photo"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_lastname"
+                    android:tint="@color/link_blue"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/petName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:background="@null"
+                    android:textColor="@color/link_blue"/>
+
+            </RelativeLayout>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_above="@id/relLayout10">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/relLayout2">
+
+                   <ImageView
+                       android:id="@+id/ic_species"
+                       android:layout_marginRight="15dp"
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:src="@drawable/ic_species"
+                       android:tint="@color/white"
+                       android:layout_centerVertical="true"/>
+
+                   <TextView
+                       android:text="Species"
+                       android:layout_toRightOf="@id/ic_species"
+                       android:textStyle="bold"
+                       android:textSize="19dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pet_species"
+                       android:layout_centerVertical="true"
+                       android:background="@null"
+                       android:textColor="@color/white"/>
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/relLayout2"
+                   android:id="@+id/relLayout22"
+                   android:layout_marginTop="15dp">
+
+                   <ImageView
+                       android:id="@+id/ic_gender"
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:src="@drawable/ic_gender"
+                       android:tint="@color/white"
+                       android:layout_marginRight="15dp"
+                       android:layout_centerVertical="true"/>
+
+                   <TextView
+                       android:text="Gender"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pet_gender"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/ic_gender"
+                       android:textStyle="bold"
+                       android:textSize="19dp"
+                       android:background="@null"
+                       android:textColor="@color/white"/>
+
+               </RelativeLayout>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/relLayout22"
+                   android:id="@+id/relLayout3"
+                   android:layout_marginTop="15dp">
+
+                   <ImageView
+                       android:layout_marginRight="15dp"
+                       android:id="@+id/ic_breed"
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:src="@drawable/ic_race"
+                       android:tint="@color/white"
+                       android:layout_centerVertical="true"/>
+
+                   <TextView
+                       android:text="Brreed"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pet_breed"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/ic_breed"
+                       android:textStyle="bold"
+                       android:textSize="19dp"
+                       android:background="@null"
+                       android:textColor="@color/white"/>
+
+               </RelativeLayout>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/relLayout3"
+                   android:id="@+id/relLayout5"
+                   android:layout_marginTop="15dp">
+
+                   <ImageView
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:src="@drawable/ic_hourglass"
+                       android:tint="@color/white"
+                       android:id="@+id/ic_age"
+                       android:layout_marginRight="15dp"
+                       android:layout_centerVertical="true"/>
+
+                   <TextView
+                       android:text="Age"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pet_age"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/ic_age"
+                       android:textStyle="bold"
+                       android:textSize="19dp"
+                       android:background="@null"
+                       android:textColor="@color/white"/>
+
+               </RelativeLayout>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/relLayout5"
+                   android:id="@+id/relLayout15"
+                   android:layout_marginTop="15dp">
+
+                   <ImageView
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:id="@+id/ic_weight"
+                       android:src="@drawable/ic_weight"
+                       android:tint="@color/white"
+                       android:layout_marginRight="15dp"
+                       android:layout_centerVertical="true"/>
+
+                   <TextView
+                       android:text="Weight"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/pet_weight"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/ic_weight"
+                       android:textStyle="bold"
+                       android:textSize="19dp"
+                       android:background="@null"
+                       android:textColor="@color/white"/>
+
+               </RelativeLayout>
+
+           </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/relLayout10"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/appointment_btn"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/link_blue"
+                    android:background="@color/white"
+                    android:textSize="20dp"
+                    android:text="Schedule appointment"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>
+
+

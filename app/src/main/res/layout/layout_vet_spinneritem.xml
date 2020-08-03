@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:paddingHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:src="@drawable/avatar"
+            android:layout_height="75dp"
+            app:civ_border_color="@color/light_cyan"
+            app:civ_border_width="2dp"
+            android:id="@+id/vet_photo"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vet_photo"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="21sp"
+                android:text="Dr. firstname"
+                android:textColor="@color/black"
+                android:id="@+id/vet_firstname"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vet_firstname"
+                android:layout_marginLeft="10dp"
+                android:textSize="19sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey"
+                android:text="lastname"
+                android:id="@+id/vet_lastname"
+               />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

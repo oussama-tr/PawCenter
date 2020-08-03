@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:src="@drawable/avatar"
+            android:layout_height="75dp"
+            app:civ_border_color="@color/light_cyan"
+            app:civ_border_width="2dp"
+            android:id="@+id/vet_photo"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vet_photo"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="21sp"
+                android:text="Dr. firstname"
+                android:textColor="@color/black"
+                android:id="@+id/vet_firstname"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vet_firstname"
+                android:layout_marginLeft="10dp"
+                android:textSize="19sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey"
+                android:text="lastname"
+                android:id="@+id/vet_lastname"
+               />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_marginBottom="15dp"
+                android:id="@+id/edit_vet_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/link_blue"/>
+
+            <ImageView
+                android:id="@+id/remove_vet_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_bin"
+                android:tint="@color/link_blue"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

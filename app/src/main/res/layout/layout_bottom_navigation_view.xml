@@ -1,0 +1,27 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/relLayoutButtom"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true">
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/buttomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+
+
+
+            app:mbn_backgroundBottomColor="#4d94ff"
+            app:mbn_defaultIconColor="#FFFFFF"
+            app:mbn_selectedIconColor="#FFFFFF"
+            app:mbn_shadowColor="#686d70"
+            app:mbn_rippleColor="#424448"/>
+
+    </RelativeLayout>
+
+</merge>

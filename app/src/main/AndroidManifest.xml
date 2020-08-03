@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidminiproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="mvvm.view.dialog.PetDialog"
+            android:theme="@style/AlertDialogNoTitle"/>
+        <activity
+            android:name="mvvm.view.dialog.AppointmentActivity"
+            android:theme="@style/AlertDialogNoTitle" />
+        <activity android:name="mvvm.view.PetActivity" />
+        <activity android:name="mvvm.view.PetFormActivity" />
+        <activity
+            android:name="mvvm.view.dialog.TosDialog"
+            android:theme="@style/AlertDialogNoTitle" />
+        <activity
+            android:name="mvvm.view.dialog.PersistSuccessDialog"
+            android:theme="@style/AlertDialogNoTitle" />
+        <activity android:name="mvvm.view.RegisterActivity" />
+        <activity android:name="mvvm.view.LoginActivity" />
+        <activity android:name="mvvm.view.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="mvvm.view.HomeActivity" />
+        <activity android:name="mvvm.view.AdminHomeActivity" />
+    </application>
+
+</manifest>

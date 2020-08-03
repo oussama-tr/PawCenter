@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="mvvm.view.fragment.ProfileFragment"
+    android:weightSum="5">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_relLayoutTop">
+
+        <include layout="@layout/snippet_top_profilebar"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/profile_background"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_profile_image"
+                android:layout_width="200dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/profile_frameLayout"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/profile_edit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Edit Profile"
+                        android:textSize="15dp"
+                        android:background="@drawable/btn_round_corners"
+                        android:textColor="@color/colorWhite"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FirstName LastName"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:layout_marginBottom="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_phone"
+                    android:tint="@color/colorAccent"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/profile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(+216) 12345678"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:maxLines="4"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_email"
+                    android:tint="@color/colorAccent"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name@host.domain"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:maxLines="4"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textlines"
+            android:textColor="@color/colorWhite"
+            android:text="My pets"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp">
+    </GridView>
+
+</LinearLayout>
